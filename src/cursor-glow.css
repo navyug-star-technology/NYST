@@ -1,0 +1,1 @@
+.cursor-glow{position:fixed;z-index:9999;pointer-events:none;width:260px;height:260px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(168,239,255,.32) 0,rgba(53,151,255,.18) 24%,rgba(0,217,255,.07) 46%,transparent 72%);filter:blur(8px);mix-blend-mode:screen}@media(pointer:coarse){.cursor-glow{display:none}}
