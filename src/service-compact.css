@@ -1,1 +1,77 @@
-.service-detail-list{max-width:1000px;margin:2rem auto 0}.service-detail-card{grid-template-columns:minmax(260px,.7fr) 1.3fr;min-height:0;max-height:390px}.service-detail-card img{height:390px;min-height:0}.service-detail-card>div{padding:1.35rem 1.6rem}.service-detail-number{font-size:.68rem}.service-detail-icon{width:2rem;height:2rem;margin-top:.45rem}.service-detail-icon svg{width:.95rem}.service-detail-label{margin:.7rem 0 .25rem!important;font-size:.6rem!important}.service-detail-card h3{font-size:clamp(1.35rem,2.4vw,2rem);line-height:1.08;margin:.25rem 0 .5rem}.service-detail-card p{font-size:.74rem;line-height:1.45}.offer-heading{margin-top:.85rem;font-size:.7rem}.service-detail-card ul{gap:.25rem .8rem;margin-top:.45rem}.service-detail-card li{font-size:.67rem}.service-detail-card .service-focus{margin-top:.75rem}.service-detail-card a{margin-top:.65rem;font-size:.7rem}@media(max-width:700px){.service-detail-list{max-width:none}.service-detail-card{display:block;max-height:none}.service-detail-card img{height:150px;min-height:150px}.service-detail-card>div{padding:1.25rem}.service-detail-card h3{font-size:1.5rem}}
+.service-detail-list {
+  max-width: 1000px;
+  margin: 2rem auto 0;
+}
+.service-detail-card {
+  grid-template-columns: minmax(260px, 0.7fr) 1.3fr;
+  min-height: 0;
+  max-height: 390px;
+}
+.service-detail-card img {
+  height: 390px;
+  min-height: 0;
+}
+.service-detail-card > div {
+  padding: 1.35rem 1.6rem;
+}
+.service-detail-number {
+  font-size: 0.68rem;
+}
+.service-detail-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.45rem;
+}
+.service-detail-icon svg {
+  width: 0.95rem;
+}
+.service-detail-label {
+  margin: 0.7rem 0 0.25rem !important;
+  font-size: 0.6rem !important;
+}
+.service-detail-card h3 {
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.08;
+  margin: 0.25rem 0 0.5rem;
+}
+.service-detail-card p {
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+.offer-heading {
+  margin-top: 0.85rem;
+  font-size: 0.7rem;
+}
+.service-detail-card ul {
+  gap: 0.25rem 0.8rem;
+  margin-top: 0.45rem;
+}
+.service-detail-card li {
+  font-size: 0.67rem;
+}
+.service-detail-card .service-focus {
+  margin-top: 0.75rem;
+}
+.service-detail-card a {
+  margin-top: 0.65rem;
+  font-size: 0.7rem;
+}
+@media (max-width: 700px) {
+  .service-detail-list {
+    max-width: none;
+  }
+  .service-detail-card {
+    display: block;
+    max-height: none;
+  }
+  .service-detail-card img {
+    height: 150px;
+    min-height: 150px;
+  }
+  .service-detail-card > div {
+    padding: 1.25rem;
+  }
+  .service-detail-card h3 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, ChevronDown, CircleHelp } from "lucide-react";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { useSiteContent, useSiteCopy } from "@/hooks/use-site-content";
@@ -146,16 +145,4 @@ function FAQPage() {
   );
 }
 
-export const Route = createFileRoute("/faq")({
-  component: FAQPage,
-  head: () => ({
-    meta: [
-      { title: "FAQs | NavYug Star Technology" },
-      {
-        name: "description",
-        content:
-          "Get clear information about NavYug Star Technology services, project planning, products, public work, and contact form status.",
-      },
-    ],
-  }),
-});
+export default FAQPage;

@@ -1,4 +1,3 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
 import { ArrowRight, Code2, Laptop, Megaphone, Palette, Smartphone } from "lucide-react";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
@@ -87,19 +86,4 @@ function PortfolioPage() {
   );
 }
 
-export const Route = createFileRoute("/portfolio")({
-  beforeLoad: () => {
-    throw redirect({ to: "/" });
-  },
-  component: PortfolioPage,
-  head: () => ({
-    meta: [
-      { title: "Portfolio | NavYug Star Technology" },
-      {
-        name: "description",
-        content:
-          "Explore NavYug Star Technology's digital capabilities and discuss project work available for public sharing.",
-      },
-    ],
-  }),
-});
+export default PortfolioPage;

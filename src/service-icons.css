@@ -1,1 +1,15 @@
-.service-detail-icon{display:grid;place-items:center;width:2.4rem;height:2.4rem;margin-top:.8rem;color:var(--cyan);background:rgba(37,99,255,.16);border:1px solid rgba(0,217,255,.32);border-radius:.6rem;box-shadow:0 0 16px rgba(37,99,255,.22)}.service-detail-icon svg{width:1.1rem}
+.service-detail-icon {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 0.8rem;
+  color: var(--cyan);
+  background: rgba(37, 99, 255, 0.16);
+  border: 1px solid rgba(0, 217, 255, 0.32);
+  border-radius: 0.6rem;
+  box-shadow: 0 0 16px rgba(37, 99, 255, 0.22);
+}
+.service-detail-icon svg {
+  width: 1.1rem;
+}

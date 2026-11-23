@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Code2, Layers3, Target } from "lucide-react";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { useSiteContent, useSiteCopy } from "@/hooks/use-site-content";
@@ -431,16 +430,4 @@ function AboutPage() {
   );
 }
 
-export const Route = createFileRoute("/about")({
-  component: AboutPage,
-  head: () => ({
-    meta: [
-      { title: "About | NavYug Star Technology" },
-      {
-        name: "description",
-        content:
-          "Learn about NavYug Star Technology's approach to building business-focused websites, apps, and software.",
-      },
-    ],
-  }),
-});
+export default AboutPage;

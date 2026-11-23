@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Bot, MessageCircle, Phone, Send, Sparkles, X } from "lucide-react";
+import { Bot, MessageCircle, Send, Sparkles, X } from "lucide-react";
 
 const whatsappMessage =
   "Hi NavYug Star Technology! I'm looking for a custom, responsive, and scalable digital solution for my business. Could you help me choose between a website, mobile app, or business software and share the next steps?";
@@ -316,8 +316,14 @@ export function SiteChatbot() {
         >
           <span className="whatsapp-launcher-icon">
             <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-              <path fill="currentColor" d="M16 3.1a12.8 12.8 0 0 0-11 19.4L3.2 29l6.7-1.8A12.8 12.8 0 1 0 16 3.1Zm0 23.3a10.5 10.5 0 0 1-5.3-1.4l-.4-.2-3.9 1 1-3.8-.3-.4A10.5 10.5 0 1 1 16 26.4Z" />
-              <path fill="currentColor" d="M21.8 18.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-1.7-.8-3-2.2-3.8-3.8-.2-.3 0-.5.2-.7l.5-.6.3-.6c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.8.8-1.1 1.9-.8 3 .7 2.1 2 3.9 3.8 5.2 1 .8 2.2 1.4 3.4 1.8.6.2 1.3.3 1.9.2.9-.1 1.7-.6 2.1-1.4.1-.3.1-.6 0-.7Z" />
+              <path
+                fill="currentColor"
+                d="M16 3.1a12.8 12.8 0 0 0-11 19.4L3.2 29l6.7-1.8A12.8 12.8 0 1 0 16 3.1Zm0 23.3a10.5 10.5 0 0 1-5.3-1.4l-.4-.2-3.9 1 1-3.8-.3-.4A10.5 10.5 0 1 1 16 26.4Z"
+              />
+              <path
+                fill="currentColor"
+                d="M21.8 18.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-1.7-.8-3-2.2-3.8-3.8-.2-.3 0-.5.2-.7l.5-.6.3-.6c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.8.8-1.1 1.9-.8 3 .7 2.1 2 3.9 3.8 5.2 1 .8 2.2 1.4 3.4 1.8.6.2 1.3.3 1.9.2.9-.1 1.7-.6 2.1-1.4.1-.3.1-.6 0-.7Z"
+              />
             </svg>
           </span>
         </a>

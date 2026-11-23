@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Check, Code2, Laptop, Megaphone, Palette, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -545,12 +544,4 @@ function ServicesPage() {
   );
 }
 
-export const Route = createFileRoute("/services")({
-  component: ServicesPage,
-  head: () => ({
-    meta: [
-      { title: "Services | NavYug Star Technology" },
-      { name: "description", content: "Digital services by NavYug Star Technology." },
-    ],
-  }),
-});
+export default ServicesPage;

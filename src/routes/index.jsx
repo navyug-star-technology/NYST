@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Check,
@@ -15,26 +15,7 @@ import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ProjectEnquiryForm } from "@/components/project-enquiry-form";
 import { useSiteContent, useSiteCopy } from "@/hooks/use-site-content";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "NavYug Star Technology | Websites, Apps & Software" },
-      {
-        name: "description",
-        content:
-          "NavYug Star Technology builds custom websites, mobile applications, business software, and digital products for ambitious businesses.",
-      },
-      { property: "og:title", content: "NavYug Star Technology | Websites, Apps & Software" },
-      {
-        property: "og:description",
-        content: "Custom digital solutions and company-owned products, built for business growth.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: Index,
-});
+export default Index;
 const services = [
   {
     title: "Website Development",

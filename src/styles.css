@@ -13,7 +13,6 @@
 @import "./service-layout-final.css";
 @import "./inner-fix.css";
 @import "tailwindcss" source(none);
-@source "../src";
 @import "tw-animate-css";
 @theme inline {
   --font-sans: "Poppins", Arial, sans-serif;
@@ -414,7 +413,9 @@ textarea {
   background: #53e19b;
   border: 2px solid rgba(83, 225, 155, 0.2);
   border-radius: 50%;
-  box-shadow: 0 0 0 2px rgba(83, 225, 155, 0.08), 0 0 10px rgba(83, 225, 155, 0.55);
+  box-shadow:
+    0 0 0 2px rgba(83, 225, 155, 0.08),
+    0 0 10px rgba(83, 225, 155, 0.55);
   animation: admin-unread-blink 1.35s ease-in-out infinite;
 }
 @keyframes admin-unread-blink {
@@ -422,12 +423,16 @@ textarea {
   100% {
     opacity: 1;
     transform: scale(1);
-    box-shadow: 0 0 0 2px rgba(83, 225, 155, 0.08), 0 0 10px rgba(83, 225, 155, 0.55);
+    box-shadow:
+      0 0 0 2px rgba(83, 225, 155, 0.08),
+      0 0 10px rgba(83, 225, 155, 0.55);
   }
   50% {
     opacity: 0.35;
     transform: scale(0.78);
-    box-shadow: 0 0 0 5px rgba(83, 225, 155, 0.03), 0 0 3px rgba(83, 225, 155, 0.2);
+    box-shadow:
+      0 0 0 5px rgba(83, 225, 155, 0.03),
+      0 0 3px rgba(83, 225, 155, 0.2);
   }
 }
 .admin-table td small {
@@ -1688,14 +1693,22 @@ footer {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-.footer-sections > span:nth-child(2)::before { content: "What we do"; }
-.footer-sections > span:nth-child(3)::before { content: "Location"; }
-.footer-sections > span:nth-child(4)::before { content: "Contact"; }
+.footer-sections > span:nth-child(2)::before {
+  content: "What we do";
+}
+.footer-sections > span:nth-child(3)::before {
+  content: "Location";
+}
+.footer-sections > span:nth-child(4)::before {
+  content: "Contact";
+}
 .footer-sections > span a {
   color: #b7c9e7;
   text-decoration: none;
 }
-.footer-sections > span a:hover { color: #ffffff; }
+.footer-sections > span a:hover {
+  color: #ffffff;
+}
 .footer-sections > span:nth-child(4) {
   font-size: 0;
 }
@@ -1720,7 +1733,11 @@ footer {
     linear-gradient(90deg, rgba(74, 151, 255, 0.045) 1px, transparent 1px),
     radial-gradient(circle at 12% 8%, rgba(0, 217, 255, 0.12), transparent 24rem),
     radial-gradient(circle at 90% 34%, rgba(37, 99, 255, 0.1), transparent 28rem);
-  background-size: 48px 48px, 48px 48px, auto, auto;
+  background-size:
+    48px 48px,
+    48px 48px,
+    auto,
+    auto;
   animation: inner-background-shift 18s ease-in-out infinite alternate;
 }
 .inner-page::before,
@@ -1736,7 +1753,18 @@ footer {
   right: -8rem;
   width: 38rem;
   height: 26rem;
-  clip-path: polygon(8% 0, 100% 0, 100% 76%, 83% 76%, 83% 100%, 36% 100%, 36% 78%, 0 78%, 0 16%, 8% 16%);
+  clip-path: polygon(
+    8% 0,
+    100% 0,
+    100% 76%,
+    83% 76%,
+    83% 100%,
+    36% 100%,
+    36% 78%,
+    0 78%,
+    0 16%,
+    8% 16%
+  );
 }
 .inner-page::after {
   bottom: 10rem;
@@ -1745,28 +1773,116 @@ footer {
   height: 24rem;
   clip-path: polygon(0 0, 64% 0, 64% 20%, 100% 20%, 100% 100%, 15% 100%, 15% 78%, 0 78%);
 }
-.inner-page > * { position: relative; z-index: 1; }
-.services-page { background-color: #060b16; }
-.faq-page { background-color: #07100f; background-image: linear-gradient(rgba(80, 220, 184, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(80, 220, 184, 0.04) 1px, transparent 1px), radial-gradient(circle at 82% 8%, rgba(0, 217, 174, 0.11), transparent 25rem); background-size: 56px 56px, 56px 56px, auto; }
-.portfolio-page { background-color: #0a0915; }
-.about-page { background-color: #090b16; background-image: radial-gradient(circle at 18% 18%, rgba(177, 112, 255, 0.13), transparent 24rem), linear-gradient(135deg, transparent 0 48%, rgba(177, 112, 255, 0.035) 49% 50%, transparent 51%); background-size: auto, 34px 34px; }
-.contact-page { background-color: #081018; background-image: linear-gradient(120deg, rgba(0, 217, 255, 0.045) 1px, transparent 1px), linear-gradient(30deg, rgba(0, 217, 255, 0.04) 1px, transparent 1px), radial-gradient(circle at 72% 22%, rgba(0, 217, 255, 0.14), transparent 25rem); background-size: 44px 76px, 44px 76px, auto; }
-.products-page { background-color: #100b0a; background-image: radial-gradient(circle at 78% 12%, rgba(255, 148, 75, 0.14), transparent 24rem), repeating-linear-gradient(135deg, rgba(255, 148, 75, 0.035) 0 1px, transparent 1px 32px); }
-.inner-page::before { animation: circuit-panel-drift 18s ease-in-out infinite alternate, circuit-panel-pulse 7s ease-in-out infinite; }
-.inner-page::after { animation: circuit-panel-drift 24s ease-in-out infinite alternate-reverse, circuit-panel-pulse 9s ease-in-out infinite reverse; }
-@keyframes circuit-panel-drift {
-  from { transform: translate3d(0, 0, 0) scale(1); }
-  to { transform: translate3d(-18px, 14px, 0) scale(1.025); }
+.inner-page > * {
+  position: relative;
+  z-index: 1;
 }
-@keyframes circuit-panel-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.72; } }
-@keyframes inner-background-shift { from { background-position: 0 0, 0 0, 0 0, 100% 0; } to { background-position: 24px 18px, -18px 12px, 20px -10px, 80% 20%; } }
-@media (prefers-reduced-motion: reduce) { .inner-page::before, .inner-page::after { animation: none; } }
+.services-page {
+  background-color: #060b16;
+}
+.faq-page {
+  background-color: #07100f;
+  background-image:
+    linear-gradient(rgba(80, 220, 184, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(80, 220, 184, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 82% 8%, rgba(0, 217, 174, 0.11), transparent 25rem);
+  background-size:
+    56px 56px,
+    56px 56px,
+    auto;
+}
+.portfolio-page {
+  background-color: #0a0915;
+}
+.about-page {
+  background-color: #090b16;
+  background-image:
+    radial-gradient(circle at 18% 18%, rgba(177, 112, 255, 0.13), transparent 24rem),
+    linear-gradient(135deg, transparent 0 48%, rgba(177, 112, 255, 0.035) 49% 50%, transparent 51%);
+  background-size:
+    auto,
+    34px 34px;
+}
+.contact-page {
+  background-color: #081018;
+  background-image:
+    linear-gradient(120deg, rgba(0, 217, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(30deg, rgba(0, 217, 255, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 72% 22%, rgba(0, 217, 255, 0.14), transparent 25rem);
+  background-size:
+    44px 76px,
+    44px 76px,
+    auto;
+}
+.products-page {
+  background-color: #100b0a;
+  background-image:
+    radial-gradient(circle at 78% 12%, rgba(255, 148, 75, 0.14), transparent 24rem),
+    repeating-linear-gradient(135deg, rgba(255, 148, 75, 0.035) 0 1px, transparent 1px 32px);
+}
+.inner-page::before {
+  animation:
+    circuit-panel-drift 18s ease-in-out infinite alternate,
+    circuit-panel-pulse 7s ease-in-out infinite;
+}
+.inner-page::after {
+  animation:
+    circuit-panel-drift 24s ease-in-out infinite alternate-reverse,
+    circuit-panel-pulse 9s ease-in-out infinite reverse;
+}
+@keyframes circuit-panel-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-18px, 14px, 0) scale(1.025);
+  }
+}
+@keyframes circuit-panel-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.72;
+  }
+}
+@keyframes inner-background-shift {
+  from {
+    background-position:
+      0 0,
+      0 0,
+      0 0,
+      100% 0;
+  }
+  to {
+    background-position:
+      24px 18px,
+      -18px 12px,
+      20px -10px,
+      80% 20%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .inner-page::before,
+  .inner-page::after {
+    animation: none;
+  }
+}
 @media (max-width: 760px) {
-  .footer-sections { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-  .footer-sections > .brand { grid-row: auto; grid-column: 1 / -1; }
+  .footer-sections {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .footer-sections > .brand {
+    grid-row: auto;
+    grid-column: 1 / -1;
+  }
 }
 @media (max-width: 480px) {
-  .footer-sections { grid-template-columns: 1fr; }
+  .footer-sections {
+    grid-template-columns: 1fr;
+  }
 }
 @keyframes drift {
   from {
@@ -1809,7 +1925,10 @@ footer {
   }
 }
 @media (max-width: 620px) {
-  .site-logo { width: 8.5rem; height: 2.7rem; }
+  .site-logo {
+    width: 8.5rem;
+    height: 2.7rem;
+  }
 }
 @media (max-width: 640px) {
   .container,
@@ -4623,7 +4742,9 @@ footer {
   background: rgba(7, 11, 19, 0.98);
 }
 @keyframes chatbot-border-spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .chatbot-header {
   display: flex;
@@ -5291,7 +5412,11 @@ footer {
     linear-gradient(90deg, rgba(67, 140, 255, 0.055) 1px, transparent 1px),
     radial-gradient(circle at 16% 12%, rgba(37, 99, 255, 0.16), transparent 30rem),
     radial-gradient(circle at 86% 78%, rgba(0, 217, 255, 0.08), transparent 27rem);
-  background-size: 64px 64px, 64px 64px, auto, auto;
+  background-size:
+    64px 64px,
+    64px 64px,
+    auto,
+    auto;
   animation: services-background-drift 28s linear infinite;
 }
 .inner-page.about-page {
@@ -5299,8 +5424,16 @@ footer {
   background-image:
     repeating-linear-gradient(45deg, rgba(177, 112, 255, 0.04) 0 1px, transparent 1px 42px),
     radial-gradient(circle at 15% 16%, rgba(177, 112, 255, 0.14), transparent 24rem),
-    repeating-linear-gradient(135deg, transparent 0 69px, rgba(177, 112, 255, 0.025) 70px 71px, transparent 72px 140px);
-  background-size: 84px 84px, auto, 140px 140px;
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 69px,
+      rgba(177, 112, 255, 0.025) 70px 71px,
+      transparent 72px 140px
+    );
+  background-size:
+    84px 84px,
+    auto,
+    140px 140px;
   animation: about-background-drift 34s ease-in-out infinite alternate;
 }
 .inner-page.faq-page {
@@ -5309,25 +5442,45 @@ footer {
     radial-gradient(circle, rgba(80, 220, 184, 0.18) 1px, transparent 1.6px),
     linear-gradient(rgba(80, 220, 184, 0.025) 1px, transparent 1px),
     radial-gradient(circle at 82% 8%, rgba(0, 217, 174, 0.12), transparent 25rem);
-  background-size: 22px 22px, 100% 48px, auto;
+  background-size:
+    22px 22px,
+    100% 48px,
+    auto;
   animation: faq-background-drift 24s linear infinite;
 }
 .inner-page.contact-page:not(.question-page) {
   background-color: #081018;
   background-image:
-    radial-gradient(circle at 74% 22%, transparent 0 7rem, rgba(0, 217, 255, 0.075) 7.05rem 7.1rem, transparent 7.15rem 11rem, rgba(0, 217, 255, 0.045) 11.05rem 11.1rem, transparent 11.15rem),
+    radial-gradient(
+      circle at 74% 22%,
+      transparent 0 7rem,
+      rgba(0, 217, 255, 0.075) 7.05rem 7.1rem,
+      transparent 7.15rem 11rem,
+      rgba(0, 217, 255, 0.045) 11.05rem 11.1rem,
+      transparent 11.15rem
+    ),
     linear-gradient(120deg, rgba(0, 217, 255, 0.035) 1px, transparent 1px),
     radial-gradient(circle at 72% 22%, rgba(0, 217, 255, 0.11), transparent 25rem);
-  background-size: 100% 100%, 56px 56px, auto;
+  background-size:
+    100% 100%,
+    56px 56px,
+    auto;
   animation: contact-background-drift 30s ease-in-out infinite alternate;
 }
 .inner-page.question-page {
   background-color: #071116;
   background-image:
-    repeating-radial-gradient(ellipse at 18% 34%, rgba(50, 210, 190, 0.045) 0 1px, transparent 2px 34px),
+    repeating-radial-gradient(
+      ellipse at 18% 34%,
+      rgba(50, 210, 190, 0.045) 0 1px,
+      transparent 2px 34px
+    ),
     linear-gradient(0deg, rgba(50, 210, 190, 0.03) 1px, transparent 1px),
     radial-gradient(ellipse at 78% 16%, rgba(50, 210, 190, 0.12), transparent 28rem);
-  background-size: 100% 100%, 100% 52px, auto;
+  background-size:
+    100% 100%,
+    100% 52px,
+    auto;
   animation: question-background-drift 32s ease-in-out infinite alternate;
 }
 .inner-page.products-page {
@@ -5335,7 +5488,9 @@ footer {
   background-image:
     repeating-linear-gradient(135deg, rgba(255, 148, 75, 0.04) 0 1px, transparent 1px 32px),
     radial-gradient(circle at 78% 12%, rgba(255, 148, 75, 0.14), transparent 24rem);
-  background-size: 46px 46px, auto;
+  background-size:
+    46px 46px,
+    auto;
   animation: products-background-drift 26s linear infinite;
 }
 .inner-page.portfolio-page {
@@ -5344,43 +5499,95 @@ footer {
     radial-gradient(circle, rgba(174, 134, 255, 0.16) 1px, transparent 1.7px),
     linear-gradient(135deg, transparent 48%, rgba(174, 134, 255, 0.035) 49% 50%, transparent 51%),
     radial-gradient(ellipse at 84% 14%, rgba(150, 100, 255, 0.13), transparent 26rem);
-  background-size: 24px 24px, 96px 96px, auto;
+  background-size:
+    24px 24px,
+    96px 96px,
+    auto;
   animation: portfolio-background-drift 30s linear infinite;
 }
 .inner-page.services-page::before,
-.inner-page.services-page::after { border-color: rgba(67, 140, 255, 0.16); }
+.inner-page.services-page::after {
+  border-color: rgba(67, 140, 255, 0.16);
+}
 .inner-page.about-page::before,
-.inner-page.about-page::after { border-color: rgba(177, 112, 255, 0.17); }
+.inner-page.about-page::after {
+  border-color: rgba(177, 112, 255, 0.17);
+}
 .inner-page.faq-page::before,
-.inner-page.faq-page::after { border-color: rgba(80, 220, 184, 0.16); }
+.inner-page.faq-page::after {
+  border-color: rgba(80, 220, 184, 0.16);
+}
 .inner-page.contact-page:not(.question-page)::before,
-.inner-page.contact-page:not(.question-page)::after { border-color: rgba(0, 217, 255, 0.17); }
+.inner-page.contact-page:not(.question-page)::after {
+  border-color: rgba(0, 217, 255, 0.17);
+}
 .inner-page.question-page::before,
-.inner-page.question-page::after { border-color: rgba(50, 210, 190, 0.17); }
+.inner-page.question-page::after {
+  border-color: rgba(50, 210, 190, 0.17);
+}
 .inner-page.products-page::before,
-.inner-page.products-page::after { border-color: rgba(255, 148, 75, 0.16); }
+.inner-page.products-page::after {
+  border-color: rgba(255, 148, 75, 0.16);
+}
 .inner-page.portfolio-page::before,
-.inner-page.portfolio-page::after { border-color: rgba(174, 134, 255, 0.17); }
+.inner-page.portfolio-page::after {
+  border-color: rgba(174, 134, 255, 0.17);
+}
 @keyframes services-background-drift {
-  to { background-position: 64px 64px, -64px 0, 18% 6%, 88% 92%; }
+  to {
+    background-position:
+      64px 64px,
+      -64px 0,
+      18% 6%,
+      88% 92%;
+  }
 }
 @keyframes about-background-drift {
-  to { background-position: 42px 42px, 22% 20%, -70px 70px; }
+  to {
+    background-position:
+      42px 42px,
+      22% 20%,
+      -70px 70px;
+  }
 }
 @keyframes faq-background-drift {
-  to { background-position: 22px 22px, 0 48px, 74% 16%; }
+  to {
+    background-position:
+      22px 22px,
+      0 48px,
+      74% 16%;
+  }
 }
 @keyframes contact-background-drift {
-  to { background-position: -28px 20px, 56px -56px, 80% 28%; }
+  to {
+    background-position:
+      -28px 20px,
+      56px -56px,
+      80% 28%;
+  }
 }
 @keyframes question-background-drift {
-  to { background-position: 0 36px, 0 -52px, 68% 24%; }
+  to {
+    background-position:
+      0 36px,
+      0 -52px,
+      68% 24%;
+  }
 }
 @keyframes products-background-drift {
-  to { background-position: 46px -46px, 68% 20%; }
+  to {
+    background-position:
+      46px -46px,
+      68% 20%;
+  }
 }
 @keyframes portfolio-background-drift {
-  to { background-position: 24px -24px, -96px 96px, 74% 24%; }
+  to {
+    background-position:
+      24px -24px,
+      -96px 96px,
+      74% 24%;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .inner-page {
@@ -5392,23 +5599,67 @@ footer {
   --page-circuit-line: rgba(0, 217, 255, 0.045);
   --page-circuit-edge: rgba(0, 217, 255, 0.12);
 }
-.inner-page.services-page { --page-circuit-node: rgba(67, 140, 255, 0.48); --page-circuit-line: rgba(67, 140, 255, 0.05); --page-circuit-edge: rgba(67, 140, 255, 0.15); }
-.inner-page.about-page { --page-circuit-node: rgba(177, 112, 255, 0.48); --page-circuit-line: rgba(177, 112, 255, 0.05); --page-circuit-edge: rgba(177, 112, 255, 0.15); }
-.inner-page.faq-page { --page-circuit-node: rgba(80, 220, 184, 0.48); --page-circuit-line: rgba(80, 220, 184, 0.05); --page-circuit-edge: rgba(80, 220, 184, 0.15); }
-.inner-page.contact-page:not(.question-page) { --page-circuit-node: rgba(0, 217, 255, 0.48); --page-circuit-line: rgba(0, 217, 255, 0.05); --page-circuit-edge: rgba(0, 217, 255, 0.15); }
-.inner-page.question-page { --page-circuit-node: rgba(50, 210, 190, 0.48); --page-circuit-line: rgba(50, 210, 190, 0.05); --page-circuit-edge: rgba(50, 210, 190, 0.15); }
-.inner-page.products-page { --page-circuit-node: rgba(255, 148, 75, 0.48); --page-circuit-line: rgba(255, 148, 75, 0.05); --page-circuit-edge: rgba(255, 148, 75, 0.15); }
-.inner-page.portfolio-page { --page-circuit-node: rgba(174, 134, 255, 0.48); --page-circuit-line: rgba(174, 134, 255, 0.05); --page-circuit-edge: rgba(174, 134, 255, 0.15); }
+.inner-page.services-page {
+  --page-circuit-node: rgba(67, 140, 255, 0.48);
+  --page-circuit-line: rgba(67, 140, 255, 0.05);
+  --page-circuit-edge: rgba(67, 140, 255, 0.15);
+}
+.inner-page.about-page {
+  --page-circuit-node: rgba(177, 112, 255, 0.48);
+  --page-circuit-line: rgba(177, 112, 255, 0.05);
+  --page-circuit-edge: rgba(177, 112, 255, 0.15);
+}
+.inner-page.faq-page {
+  --page-circuit-node: rgba(80, 220, 184, 0.48);
+  --page-circuit-line: rgba(80, 220, 184, 0.05);
+  --page-circuit-edge: rgba(80, 220, 184, 0.15);
+}
+.inner-page.contact-page:not(.question-page) {
+  --page-circuit-node: rgba(0, 217, 255, 0.48);
+  --page-circuit-line: rgba(0, 217, 255, 0.05);
+  --page-circuit-edge: rgba(0, 217, 255, 0.15);
+}
+.inner-page.question-page {
+  --page-circuit-node: rgba(50, 210, 190, 0.48);
+  --page-circuit-line: rgba(50, 210, 190, 0.05);
+  --page-circuit-edge: rgba(50, 210, 190, 0.15);
+}
+.inner-page.products-page {
+  --page-circuit-node: rgba(255, 148, 75, 0.48);
+  --page-circuit-line: rgba(255, 148, 75, 0.05);
+  --page-circuit-edge: rgba(255, 148, 75, 0.15);
+}
+.inner-page.portfolio-page {
+  --page-circuit-node: rgba(174, 134, 255, 0.48);
+  --page-circuit-line: rgba(174, 134, 255, 0.05);
+  --page-circuit-edge: rgba(174, 134, 255, 0.15);
+}
 .inner-page::before,
 .inner-page::after {
   background-image:
     radial-gradient(circle at 20% 28%, var(--page-circuit-node) 0 2px, transparent 2.5px),
     radial-gradient(circle at 72% 64%, var(--page-circuit-node) 0 2px, transparent 2.5px),
     radial-gradient(circle at 56% 84%, var(--page-circuit-node) 0 1.5px, transparent 2px),
-    repeating-linear-gradient(90deg, transparent 0 46px, var(--page-circuit-line) 47px 48px, transparent 49px 96px),
-    repeating-linear-gradient(0deg, transparent 0 46px, var(--page-circuit-line) 47px 48px, transparent 49px 96px),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 46px,
+      var(--page-circuit-line) 47px 48px,
+      transparent 49px 96px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 46px,
+      var(--page-circuit-line) 47px 48px,
+      transparent 49px 96px
+    ),
     linear-gradient(135deg, transparent 49.6%, var(--page-circuit-line) 50%, transparent 50.4%);
-  background-size: 100% 100%, 100% 100%, 100% 100%, auto, auto, 110px 110px;
+  background-size:
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    auto,
+    auto,
+    110px 110px;
 }
 @media (max-width: 22rem) {
   .site-header {

@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useSiteCopy } from "@/hooks/use-site-content";
 import { ProjectEnquiryForm } from "@/components/project-enquiry-form";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -36,16 +35,4 @@ function ContactPage() {
   );
 }
 
-export const Route = createFileRoute("/contact")({
-  component: ContactPage,
-  head: () => ({
-    meta: [
-      { title: "Contact | NavYug Star Technology" },
-      {
-        name: "description",
-        content:
-          "Start a conversation about your website, app, software, or digital product project.",
-      },
-    ],
-  }),
-});
+export default ContactPage;

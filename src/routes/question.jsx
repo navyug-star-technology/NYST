@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, CircleHelp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -100,12 +99,4 @@ function QuestionPage() {
   );
 }
 
-export const Route = createFileRoute("/question")({
-  component: QuestionPage,
-  head: () => ({
-    meta: [
-      { title: "Ask a Question | NavYug Star Technology" },
-      { name: "description", content: "Send a question to NavYug Star Technology." },
-    ],
-  }),
-});
+export default QuestionPage;

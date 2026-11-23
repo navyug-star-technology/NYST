@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Link, useRouterState } from "@tanstack/react-router";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowUpRight, Check, Menu, Sparkles, X } from "lucide-react";
 import { SiteChatbot } from "@/components/site-chatbot";
 import { apiRequest } from "@/lib/api";
@@ -26,7 +26,7 @@ const navigationItems = [
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = useRouterState({ select: (state) => state.location.pathname });
+  const { pathname } = useLocation();
   const companyName = useSiteCopy("global.brandName", "NavYug Star");
   const siteContent = useSiteContent();
   const navItems = Array.isArray(siteContent.global?.navigation)

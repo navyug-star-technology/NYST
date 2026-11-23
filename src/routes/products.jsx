@@ -1,4 +1,3 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
 import { ArrowRight, Check, FileText, Layers3, Search, Workflow } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -144,19 +143,4 @@ function ProductsPage() {
   );
 }
 
-export const Route = createFileRoute("/products")({
-  beforeLoad: () => {
-    throw redirect({ to: "/" });
-  },
-  component: ProductsPage,
-  head: () => ({
-    meta: [
-      { title: "Products | NavYug Star Technology" },
-      {
-        name: "description",
-        content:
-          "Ask about current product details, availability, demos, and licensing with NavYug Star Technology.",
-      },
-    ],
-  }),
-});
+export default ProductsPage;
