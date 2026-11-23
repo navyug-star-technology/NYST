@@ -973,14 +973,28 @@ h1 em {
 }
 .hero-actions {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 2rem;
 }
 .hero-actions .inline-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-height: 2.75rem;
+  white-space: nowrap;
+  line-height: 1;
   border: 1px solid #3b78ff;
   background: var(--blue);
   box-shadow: 0 0 24px rgba(37, 99, 255, 0.28);
+}
+.hero-actions .inline-flex svg {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
 }
 .hero-actions .inline-flex:last-child {
   background: rgba(9, 18, 34, 0.6);
