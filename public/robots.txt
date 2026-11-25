@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://navyugstartechnology.vercel.app/sitemap.xml
