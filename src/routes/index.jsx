@@ -211,6 +211,7 @@ function Index() {
               <span className="eyebrow hero-heading-eyebrow">
                 <span aria-hidden="true" /> {homeEyebrow}
               </span>
+              <span className="sr-only">NavYug Star Technology</span>
               <span>{heroTitle}</span>
             </h1>
             <p className="hero-lede">{heroDescription}</p>

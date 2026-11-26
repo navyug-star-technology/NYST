@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://navyugstartechnology.vercel.app/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
-
+  <url><loc>https://navyugstartechnology.vercel.app/about</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://navyugstartechnology.vercel.app/services</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://navyugstartechnology.vercel.app/faq</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://navyugstartechnology.vercel.app/contact</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://navyugstartechnology.vercel.app/question</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://navyugstartechnology.vercel.app/portfolio</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://navyugstartechnology.vercel.app/products</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://navyugstartechnology.vercel.app/admin</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
